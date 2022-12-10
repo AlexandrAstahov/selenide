@@ -27,7 +27,7 @@ public class CardDeliveryOrder {
     @Test
     public void successfulSending() {
         Configuration.holdBrowserOpen = true;
-        $x("//input[@placeholder='Город']").val("Кызыл");
+        $x("//input[@placeholder='Город']").val("Kizil");
         $x("//input[@type=\"tel\"]").doubleClick().sendKeys(Keys.DELETE);
         $x("//input[@placeholder='Дата встречи']").val(calendar(3));
         $("[data-test-id='name'] input").val("Астахов Александр");
